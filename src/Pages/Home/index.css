@@ -1,0 +1,17 @@
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+  #home-page {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    margin-top: 60px;
+  }
+}

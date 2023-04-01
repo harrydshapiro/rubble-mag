@@ -1,0 +1,37 @@
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 50px 50px 0 100px;
+  box-sizing: border-box;
+  z-index: 10000000000;
+}
+
+#nav p {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#nav #logo {
+  height: 75px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    padding: 15px 15px 0 30px;
+  }
+
+  #nav p {
+    font-size: 14px;
+  }
+
+  #nav #logo {
+    height: 45px;
+  }
+}

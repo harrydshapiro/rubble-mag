@@ -1,0 +1,36 @@
+#info-wrapper {
+  color: #575757;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  padding: 10px 40px 40px 10px;
+}
+
+#info-wrapper .content {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  background: #ffffffd9;
+}
+
+#info-wrapper .content[data-visible=false] {
+  display: none;
+}
+
+#info-wrapper .content[data-visible=true] {
+  display: auto;
+}
+
+#info-wrapper .button {
+  font-weight: 800;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  #info-wrapper {
+    max-width: 280px;
+  }
+}
