@@ -5,6 +5,7 @@ import {
   Outlet,
   RouterProvider,
   createBrowserRouter,
+  redirect,
 } from "react-router-dom";
 import { Home } from 'Pages/Home';
 import { Feature } from 'Pages/Feature';
@@ -12,8 +13,11 @@ import { Nav } from 'Components/Nav';
 import { Info } from 'Components/Info';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import usePageTracking from 'utils/usePageTracking';
 
 function AppWrapper() {
+  usePageTracking()
+
   return (
     <>
       <Nav/>
@@ -28,14 +32,21 @@ const router = createBrowserRouter([
     path: "/", 
     element: <AppWrapper/>,
     children:[
-         {
-             path: "/",
-             element: <Home/>
-         },
-         {
-             path: "/feature/:featureId",
-             element: <Feature/>
-         },
+        {
+          path: "/",
+          element: <Home/>
+        },
+        {
+          path: "/feature/:featureId",
+          element: <Feature/>
+        },
+        {
+          path: "*",
+          loader: () => {
+            redirect('/')
+          }
+        }
+        
     ]
 }
 ]);
