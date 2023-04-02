@@ -3,7 +3,6 @@ import { RenderPreview } from 'Components/RenderPreview'
 import './index.css'
 import { features } from 'features'
 import Slider, { Settings } from "react-slick";
-import _ from "lodash";
 
 export function Home(): JSX.Element {
   const sliderRef = useRef<any>(null)
