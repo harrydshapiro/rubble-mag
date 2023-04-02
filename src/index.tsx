@@ -10,6 +10,8 @@ import { Home } from 'Pages/Home';
 import { Feature } from 'Pages/Feature';
 import { Nav } from 'Components/Nav';
 import { Info } from 'Components/Info';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function AppWrapper() {
   return (

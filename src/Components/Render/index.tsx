@@ -23,16 +23,12 @@ export function Render({ featureId, originalPosition }: { featureId: string, ori
       <model-viewer 
         ref={modelRef} 
         src={`/features/${featureId}/render.glb`} 
-        // ar 
-        // ar-modes="webxr scene-viewer quick-look"
         camera-controls
         shadow-intensity="1" 
         exposure="1" 
         loading="lazy"
         class="modelViewer"
         interpolation-decay="80"
-        // {...(originalPosition?.cameraOrbit ? {'camera-orbit': originalPosition.cameraOrbit} : {})}
-        // {...(originalPosition?.cameraOrbit ? {'field-of-view': originalPosition.fieldOfView} : {})}
       >
       <div id="poster" slot="poster">
         <img alt="loading" src="/loading.gif"/>
@@ -41,3 +37,4 @@ export function Render({ featureId, originalPosition }: { featureId: string, ori
     </div>
   );
 }
+      

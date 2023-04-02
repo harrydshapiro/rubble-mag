@@ -1,10 +1,32 @@
 #home-page {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-top: 80px;
+  justify-content: center;
+}
+
+#home-page > div {
+  width: 90%;
+}
+
+.arrow-container {
+  display: block;
+}
+
+.arrow-container svg {
+  fill: grey;
+}
+
+.arrow-container.prev {
+  transform: translateX(-3vw);
+}
+.arrow-container.next {
+  transform: translateX(3vw);
+}
+
+.slick-slider {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {

@@ -25,3 +25,7 @@ code {
 p {
   margin: 0;
 }
+
+.font-icon {
+  font-family: sans-serif;
+}

@@ -8,7 +8,7 @@ export function Nav (): JSX.Element {
   const location = useLocation()
   const { featureId } = useParams()
   const onFeaturePage = location.pathname.indexOf('/feature') === 0 && !!featureId;
-  const currentFeature = onFeaturePage ? features.find(feature => feature.featureId === featureId) : null;
+  const currentFeature = onFeaturePage ? features[featureId] : null;
   const title = currentFeature?.title ?? 'An ode to trash'
 
   return (
