@@ -120,7 +120,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     )  
   },
   pizza: {
-    title: '99 Cents. Fresh & Hot',
+    title: '99 Cents. Fresh! Hot!',
     cameraOrbit: "-811.5deg 74.92deg 4.091m",
     fieldOfView: "20.67deg",
     modelViewerElement: (
