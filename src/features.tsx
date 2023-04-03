@@ -6,6 +6,17 @@ declare global {
   }
 }
 
+const defaultModelViewerOptions = {
+  "camera-controls": true,
+  "shadow-intensity": "1",
+  exposure: "1",
+  loading: "lazy",
+  class: "modelViewer",
+  "interpolation-decay": "80",
+  ar: true,
+  'ar-scale': 'fixed'
+}
+
 const loadingPoster = (<div id="poster" slot="poster">
   <img alt="loading" src="/loading.gif"/>
 </div>)
@@ -18,12 +29,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/eyes_boxes/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -36,12 +42,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/dogshit/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -54,12 +55,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/toilet/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -72,12 +68,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer 
         src="/features/rat/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -90,12 +81,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer 
         src="/features/champagne/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -108,12 +94,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer 
         src="/features/banana/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -126,12 +107,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer 
         src="/features/pizza/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -144,12 +120,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/couch/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -162,12 +133,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/bra/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -180,12 +146,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/flower/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -198,12 +159,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer 
         src="/features/books/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -216,12 +172,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/mayo/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -234,12 +185,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/pasta/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -252,12 +198,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/pizza_beer/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -270,12 +211,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/trash_lots/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -288,12 +224,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/water/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -306,12 +237,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer 
         src="/features/whole_foods/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -324,12 +250,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/trashcan/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
@@ -342,12 +263,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
     modelViewerElement: (
       <model-viewer
         src="/features/sugar/render.glb"
-        camera-controls
-        shadow-intensity="1" 
-        exposure="1" 
-        loading="lazy"
-        class="modelViewer"
-        interpolation-decay="80"
+        {...defaultModelViewerOptions}
       >
         {loadingPoster}
       </model-viewer>
