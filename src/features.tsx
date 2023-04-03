@@ -14,7 +14,8 @@ const defaultModelViewerOptions = {
   class: "modelViewer",
   "interpolation-decay": "80",
   ar: true,
-  'ar-scale': 'fixed'
+  'ar-scale': 'fixed',
+  'ar-modes': 'quick-look webxr scene-viewer'
 }
 
 const loadingPoster = (<div id="poster" slot="poster">
