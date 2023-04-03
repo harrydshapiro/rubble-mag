@@ -1,19 +1,28 @@
 .render {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .modelViewer {
-    height: 100%;
-    width: 100%;
-    margin-top: -10px;
-  }
-  
-  #poster img {
-    position: fixed;
-    top: 50vh;
-    left: 50vw;
-    height: 50px;
-    width: 50px;
-    transform: translate(-50%, -50%);
-  }
+  height: 100%;
+  width: 100%;
+}
+
+.modelViewer {
+  height: 100%;
+  width: 100%;
+  margin-top: -10px;
+  position: relative;
+}
+
+#poster img {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  height: 50px;
+  width: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.ar-button {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+}

@@ -22,6 +22,8 @@ const loadingPoster = (<div id="poster" slot="poster">
   <img alt="loading" src="/loading.gif"/>
 </div>)
 
+const arButton = (<img className="ar-button" slot="ar-button" alt="ar-button" src="/ar_icon.png"/>)
+
 export const features: Record<string, { modelViewerElement: any, cameraOrbit: string, fieldOfView: string, title: string }> = {
   eyes_boxes: {
     title: 'What are you looking at?',
@@ -33,6 +35,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -46,6 +49,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -59,6 +63,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -72,6 +77,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )  
   },
@@ -85,6 +91,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )  
   },
@@ -98,6 +105,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )  
   },
@@ -111,6 +119,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )  
   },
@@ -124,6 +133,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -137,6 +147,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -150,6 +161,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -163,6 +175,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
       )  
   },
@@ -176,6 +189,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -189,6 +203,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -202,6 +217,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -215,6 +231,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -228,6 +245,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -241,6 +259,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )  
   },
@@ -254,6 +273,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   },
@@ -267,6 +287,7 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {...defaultModelViewerOptions}
       >
         {loadingPoster}
+        {arButton}
       </model-viewer>
     )
   }
