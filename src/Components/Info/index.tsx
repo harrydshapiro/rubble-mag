@@ -41,7 +41,7 @@ export function Info (): JSX.Element {
   }, [setShowInfo])
   return (
     <div id="info-wrapper" onClick={handleInfoWrapperClick} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
-      <p className='content' data-visible={showInfo}>Rubble is a project celebrating the trash of New York City. We tend to avoid trash, avert out eyes .. but if you closer, trash offers an honest record of what it mean to consume <span className="font-icon">-</span> and exist <span className="font-icon">-</span> as a human. Rubbish invites you to get intimate and engage with all that we leave behind. There are stories in there. And aesthetic.  We are our own best galleries.</p>
+      <p className='content' data-visible={showInfo}>Rubble is a project celebrating the trash of New York. We tend to avoid trash, avert out eyes .. but if you look closer, trash offers an honest record of what it mean to consume <span className="font-icon">-</span> and exist <span className="font-icon">-</span> as a human. Rubble invites you to engage and get intimate with all that we leave behind. There are stories out there. We are our own galleries.</p>
       <p id={infoButtonId} className='button'>{buttonText}</p>
     </div>
   )
