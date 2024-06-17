@@ -41,8 +41,8 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
   },
   dogshit: {
     title: 'Too many dogs in Williamsburg',
-    cameraOrbit: "159deg 50.65deg 1.975m",
-    fieldOfView: "33.65deg",
+    cameraOrbit: "0.1967deg 22.5deg -10m",
+    fieldOfView: "0deg",
     modelViewerElement: (
       <model-viewer
         src="/features/dogshit/render.glb"
