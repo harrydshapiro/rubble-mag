@@ -24,7 +24,7 @@ jobs:
         run: npm run build
       # Share artifact inside workflow
       - name: Share artifact inside workflow
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: react-github-actions-build
           path: build
@@ -51,4 +51,4 @@ jobs:
         run: aws s3 sync . s3://sarahconlisk.com --delete
         working-directory: react-github-actions-build
       - name: Invalidate cached files in Cloudfront
-        run: aws cloudfront create-invalidation --paths "/*" --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: aws cloudfront create-invalidation --paths "/*" --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}``
