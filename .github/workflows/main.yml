@@ -46,6 +46,6 @@ jobs:
       # Copy the files from build folder to the S3 bucket
       - name: Deploy static site to root S3 bucket
         run: aws s3 sync . s3://sarahconlisk.com --delete
-        working-directory: react-github-actions-build
+        working-directory: build
       - name: Invalidate cached files in Cloudfront
         run: aws cloudfront create-invalidation --paths "/*" --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
