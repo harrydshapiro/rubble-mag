@@ -290,5 +290,21 @@ export const features: Record<string, { modelViewerElement: any, cameraOrbit: st
         {arButton}
       </model-viewer>
     )
+  },
+
+  holiday_treats: {
+    title: 'Happy Holidays',
+    cameraOrbit: "124.6deg 74.96deg 1.546m",
+    fieldOfView: "30deg",
+    modelViewerElement: (
+      <model-viewer
+        src="/features/holiday_treats/render.glb"
+        {...defaultModelViewerOptions}
+      >
+        {loadingPoster}
+        {arButton}
+      </model-viewer>
+    )
   }
+
 }
