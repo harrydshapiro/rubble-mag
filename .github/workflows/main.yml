@@ -23,8 +23,8 @@ jobs:
       - name: Share artifact inside workflow
         uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: build
+          name: prod-build
+          path: prod-build
   deploy:
     runs-on: ubuntu-latest
     # When application is successfully tested and build has been generated
@@ -35,7 +35,7 @@ jobs:
       - name: Get artifact
         uses: actions/download-artifact@v3
         with:
-          name: build
+          name: prod-build
       # Set the credentials from repository settings/secrets
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -45,9 +45,9 @@ jobs:
           aws-region: us-east-1
       # Copy the files from build folder to the S3 bucket
       - name: Check contents of build folder
-        run: ls /home/runner/work/rubble-mag/rubble-mag
+        run: ls /home/runner/work/rubble-mag/rubble-mag && ls /home/runner/work/rubble-mag/rubble-mag/static
       - name: Deploy static site to root S3 bucket
         run: aws s3 sync . s3://sarahconlisk.com --delete
-        working-directory: build
+        working-directory: prod-build
       - name: Invalidate cached files in Cloudfront
         run: aws cloudfront create-invalidation --paths "/*" --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
